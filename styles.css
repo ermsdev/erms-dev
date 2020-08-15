@@ -7,20 +7,6 @@
     font-style: normal;
 }
 
-#main-container .button {
-    font-family: JetBrainsMono;
-}
-
-#main-container {
-    font-family: JetBrainsMono;
-}
-
-@media only screen and (max-width: 600px) {
-    #main-container {
-        font-size: 4vw;
-    }
-}
-
 :root {
     --github-color: black;
     --linkedin-color: rgb(44, 105, 176);
@@ -33,6 +19,14 @@ body {
     text-align: center;
 }
 
+#main-container {
+    font-family: JetBrainsMono;
+}
+
+#main-container .button {
+    font-family: JetBrainsMono;
+}
+
 #header-container {
     text-align: center;
 }
@@ -41,60 +35,59 @@ body {
     font-size: large;
 }
 
-.button:hover .social-logo {
-    height: 1em;
+#button-container .button:hover .social-logo {
     filter: brightness(0) invert(1);
     transition-duration: var(--button-transition-duration);
 }
 
-.button .social-logo {
-    height: 1em;
-    margin-bottom: -0.13em;
-    margin-right: 3px;
+#button-container .button .social-logo {
+    height: 1.5em;
+    margin-bottom: -0.25em;
+    margin-right: 1Gpx;
 }
 
-#main-container #button-container .button {
+#button-container .button {
     display: inline-block;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid;
     margin: 10px;
     padding: 10px;
 }
 
-#main-container #button-container .button:hover {
+#button-container .button:hover {
     transition-duration: var(--button-transition-duration);
 }
 
-#main-container #button-container a.social-button-link {
+#button-container a.social-button-link {
     text-decoration: none;
 }
 
-#main-container #button-container #linkedin-btn {
+#linkedin-btn {
     border-color: var(--linkedin-color);
     color: var(--linkedin-color);
 }
 
-#main-container #button-container #linkedin-btn:hover {
+#linkedin-btn:hover {
     border-color: var(--linkedin-color);
     background-color: var(--linkedin-color);
     color: white;
 }
 
-#main-container #button-container #linkedin-btn:focus {
+#linkedin-btn:focus {
     border-color: var(--linkedin-color);
 }
 
-#main-container #button-container #github-btn {
+#github-btn {
     border-color: var(--github-color);
     color: var(--github-color);
 }
 
-#main-container #button-container #github-btn:hover {
+#github-btn:hover {
     border-color: var(--github-color);
     background-color: var(--github-color);
     color: white;
 }
 
-#main-container #button-container #github-btn:focus {
+#github-btn:focus {
     border-color: var(--github-color);
 }
