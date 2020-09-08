@@ -93,3 +93,11 @@ body {
 #github-btn:focus {
     border-color: var(--github-color);
 }
+
+#privacy-link {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: lightgray;
+    font-size: 15px;
+}
