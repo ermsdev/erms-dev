@@ -101,3 +101,45 @@ body {
     color: lightgray;
     font-size: 15px;
 }
+
+#company-tld {
+    position: absolute;
+    color: black;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#company {
+    display: inline-block;
+}
+
+a#company-link {
+    text-decoration: underline;
+    color: black;
+}
+
+a#company-link:hover {
+    text-decoration: none;
+    color: orange;
+    transition: ease-in-out .25s;
+}
+
+#company-link:hover ~ #company-tld {
+    width: 2.40em;
+    color: orange;
+    transition: ease-in-out .25s;
+}
+
+#company-link ~ #company-tld {
+    opacity: 1;
+    width: 0px;
+    transition: ease-in-out .25s;
+}
+
+.thick-underline {
+    height: .15em;
+    width: 100%;
+    position: relative;
+    bottom: 1px;
+    background: orange;
+}
